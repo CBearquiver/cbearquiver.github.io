@@ -1,16 +1,18 @@
 
-function clickBoring() 
+function clickBigger() 
 {
+  alert("Hello, world!");
   document.getElementById("fancyArea").style.fontSize="24pt";
 }
 
 function clickMoo() 
 {
+  alert("All upercase and moos!");
   let fancyArea = document.getElementById("fancyArea").value;
   fancyArea = fancyArea.toUpperCase();
 
   fancyArea = fancyArea.split(".");
-  fancyArea = fancyArea.join("MOO. ");
+  fancyArea = fancyArea.join("-MOO.");
 
   document.getElementById("fancyArea").value = fancyArea;
 }
